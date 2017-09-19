@@ -36,5 +36,11 @@ public class StartUp {
                     + "\n\tCredits: " + course.getCredits() 
                     + "\n\tPrerequisites: " + course.getPrerequisites());
         }
+        
+        /*
+            I think that the super class doesn't need to be abstract with the 
+            way I did it. All of the classes use the setters the same so I did
+            not have to make them abstract.
+        */
     }
 }

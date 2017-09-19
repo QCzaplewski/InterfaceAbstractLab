@@ -23,7 +23,12 @@ public abstract class Course {
         this.credits = credits;
         this.prerequisites = prerequisites;
     }
-
+    
+    /*
+        I did not make any of the setters abstract because all of the sub-classes
+        will use them the same.
+    */
+    
     public String getCourseName() {
         return courseName;
     }

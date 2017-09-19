@@ -17,12 +17,24 @@ public class StartUp {
         
         Course[] courses = {course1, course2, course3};
         
+        System.out.println("--------Test1--------");
         for(Course course : courses){
-            System.out.println(course.getCourseName() + ": "
+            System.out.println(course.getCourseName() + "- "
                     + "\n\tCourse Number: " + course.getCourseNumber() 
                     + "\n\tCredits: " + course.getCredits() 
                     + "\n\tPrerequisites: " + course.getPrerequisites());
         }
         
+        course1.setCredits(1.5);
+        course2.setCourseNumber("222-333");
+        course3.setPrerequisites("Intro Java, Intro to Programming");
+        
+        System.out.println("\n--------Test2--------");
+        for(Course course : courses){
+            System.out.println(course.getCourseName() + "- "
+                    + "\n\tCourse Number: " + course.getCourseNumber() 
+                    + "\n\tCredits: " + course.getCredits() 
+                    + "\n\tPrerequisites: " + course.getPrerequisites());
+        }
     }
 }
